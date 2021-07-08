@@ -8,9 +8,16 @@ import {FlexBoxComponent} from './app/components/FlexBoxComponent';
 export default function App() {
 
   return (
-    // <DeviceOrientationComponent></DeviceOrientationComponent>
+    
     <FlexBoxComponent></FlexBoxComponent>
+  
   );
 }
+
+const styles = StyleSheet.create({
+  container:{
+    marginTop:50,
+  }
+})
 
 
