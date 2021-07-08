@@ -3,35 +3,14 @@ import React from 'react';
 import { StyleSheet, Text, View ,Dimensions} from 'react-native';
 import {useDeviceOrientation, useDimensions} from '@react-native-community/hooks';
 
+import { DeviceOrientationComponent } from './app/components/DeviceOrientationComponent';
+import {FlexBoxComponent} from './app/components/FlexBoxComponent';
 export default function App() {
 
-  // console.log('Dimensions')
-  // console.log(Dimensions.get('screen'))
-  // console.log('useDimensions')
-  // console.log(useDimensions())
-  console.log(useDeviceOrientation())
-
-  const orientation=useDeviceOrientation();
-
   return (
-    <View style={styles.container}>
-      <View style={{
-        backgroundColor:'dodgerblue',
-        width:'100%',
-        height:orientation.landscape?'100%':'30%',
-      }}
-      >
-      </View>
-    </View>
+    // <DeviceOrientationComponent></DeviceOrientationComponent>
+    <FlexBoxComponent></FlexBoxComponent>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    marginTop:50,
-  },
-});
+
