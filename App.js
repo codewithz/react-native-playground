@@ -1,17 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View ,Dimensions} from 'react-native';
+import {useDeviceOrientation, useDimensions} from '@react-native-community/hooks';
 
 export default function App() {
 
-  console.log(Dimensions.get('screen'))
+  // console.log('Dimensions')
+  // console.log(Dimensions.get('screen'))
+  // console.log('useDimensions')
+  // console.log(useDimensions())
+  console.log(useDeviceOrientation())
+
+  const orientation=useDeviceOrientation();
 
   return (
     <View style={styles.container}>
       <View style={{
         backgroundColor:'dodgerblue',
-        width:'50%',
-        height:70
+        width:'100%',
+        height:orientation.landscape?'100%':'30%',
       }}
       >
       </View>
