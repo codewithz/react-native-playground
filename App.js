@@ -6,11 +6,12 @@ import {useDeviceOrientation, useDimensions} from '@react-native-community/hooks
 import { DeviceOrientationComponent } from './app/components/DeviceOrientationComponent';
 import {FlexBoxComponent} from './app/components/FlexBoxComponent';
 import { BorderComponent } from './app/components/styling/BorderComponent';
+import { TextStyleComponent } from './app/components/styling/TextStyleComponent';
 export default function App() {
 
   return (
     
-    <BorderComponent></BorderComponent>
+   <TextStyleComponent></TextStyleComponent>
     
   );
 }
