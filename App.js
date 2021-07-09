@@ -7,11 +7,15 @@ import { DeviceOrientationComponent } from './app/components/DeviceOrientationCo
 import {FlexBoxComponent} from './app/components/FlexBoxComponent';
 import { BorderComponent } from './app/components/styling/BorderComponent';
 import { TextStyleComponent } from './app/components/styling/TextStyleComponent';
+import { MaterialIcons } from '@expo/vector-icons';
 export default function App() {
 
   return (
-    
+    <View style={styles.container}>
+    <MaterialIcons name="email" size={30} color="greenyellow"></MaterialIcons>
    <TextStyleComponent></TextStyleComponent>
+
+   </View>
     
   );
 }
@@ -19,6 +23,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container:{
     marginTop:50,
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center',
+
   }
 })
 
